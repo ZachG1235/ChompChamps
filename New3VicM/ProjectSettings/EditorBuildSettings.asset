@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 1ea418fbccd26a641bc9e2bc0047cec5
   - enabled: 1
+    path: Assets/Scenes/LobbyScene.unity
+    guid: 575ca4c3c9ba442fa8b7bdfc888058a8
+  - enabled: 1
     path: Assets/Scenes/CameraScreen.unity
     guid: 7315f9a5991206540a8ed809a0b00d39
   - enabled: 1

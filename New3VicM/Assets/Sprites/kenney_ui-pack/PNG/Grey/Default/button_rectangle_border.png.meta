@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: button_rectangle_border_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 42.666664
+        width: 64
+        height: 21.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ac839a569c248b8bb334c9fccae81e
+      internalID: -1938168817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_rectangle_border_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 42.666664
+        width: 64
+        height: 21.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52572c2a81b43473e8e1d67a106979f3
+      internalID: 340334254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_rectangle_border_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 42.666664
+        width: 64
+        height: 21.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce2e8752f34546b7865e8e3d55606b7
+      internalID: 588407272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_rectangle_border_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21.666666
+        width: 64
+        height: 21.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbf20a6fe2b540298060238aaa4d7cd
+      internalID: -1595905073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_rectangle_border_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 21.666666
+        width: 64
+        height: 21.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b171c922fc045648802bc50c048dcd
+      internalID: 517196737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_rectangle_border_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 21.666666
+        width: 64
+        height: 21.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a16f41c85f245a8ba43e2fcd6a0614
+      internalID: 1114748787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_rectangle_border_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.66666603
+        width: 64
+        height: 21.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4f5df5282e344f38f8fc0747509d0c
+      internalID: 1768976785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_rectangle_border_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0.66666603
+        width: 64
+        height: 21.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cceea124d8f141a6b60fcce94ce4eaf
+      internalID: 1627728713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_rectangle_border_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0.66666603
+        width: 64
+        height: 21.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6712e7ac6bc1a43848fa68f05f5034ea
+      internalID: -2136430391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +308,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      button_rectangle_border_0: -1938168817
+      button_rectangle_border_1: 340334254
+      button_rectangle_border_2: 588407272
+      button_rectangle_border_3: -1595905073
+      button_rectangle_border_4: 517196737
+      button_rectangle_border_5: 1114748787
+      button_rectangle_border_6: 1768976785
+      button_rectangle_border_7: 1627728713
+      button_rectangle_border_8: -2136430391
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
