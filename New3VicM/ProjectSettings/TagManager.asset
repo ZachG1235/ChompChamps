@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - stuff
   - 
   - 
   - 
@@ -40,4 +40,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 3937695797
     locked: 0
