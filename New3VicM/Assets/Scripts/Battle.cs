@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,8 +11,10 @@ public class Battle : MonoBehaviour
     public GameObject userInterfaceButtons;
     public GameObject userInterface;
 
-    public GameObject playerHPText;
-    public GameObject enemyHPText;
+    public TextMeshProUGUI playerHPText;
+    public TextMeshProUGUI enemyHPText;
+    public Animator playerController;
+    private int playerDamage, enemyDamage;
 
     public struct EnemyStats
     {
@@ -73,11 +76,13 @@ public class Battle : MonoBehaviour
 
     public void UpdatePlayerHealthText()
     {
-        playerHPText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player HP: " + PlayerSettings.stats.maxHealth.ToString();
+        playerHPText.text = "Player HP: " + PlayerSettings.stats.maxHealth.ToString();
+        StartCoroutine(ChangeColorCoroutine(playerHPText));
     }
     public void UpdateEnemyHealthText()
     {
-        enemyHPText.GetComponent<TMPro.TextMeshProUGUI>().text = "Enemy HP: " + enemyStats.maxHealth.ToString();
+        enemyHPText.text = "Enemy HP: " + enemyStats.maxHealth.ToString();
+        StartCoroutine(ChangeColorCoroutine(enemyHPText));
     }
 
 
@@ -88,12 +93,17 @@ public class Battle : MonoBehaviour
 
     public void AttackClicked()
     {
+        // animate attack
+        playerController.SetTrigger("attack");
+
         userInterfaceButtons.SetActive(false);
         StartCoroutine(Attack(1));
     }
 
     public void SpecialClicked()
     {
+        // animate special
+        playerController.SetTrigger("special");
         userInterfaceButtons.SetActive(false);
         StartCoroutine(Attack(2));
     }
@@ -200,9 +210,13 @@ public class Battle : MonoBehaviour
         // not implmented
         Debug.Log("Player dealt: " + damage + " damage");
 
-        enemyStats.maxHealth -= GetDamageWithDefense(damage, enemyStats.defense);
+        enemyDamage = GetDamageWithDefense(damage, enemyStats.defense);
+        enemyStats.maxHealth -= enemyDamage;
 
-        UpdateEnemyHealthText();
+        if (enemyDamage > 0)
+        {
+            UpdateEnemyHealthText();
+        }
     }
 
     public void DealDamageToPlayer(int damage)
@@ -211,9 +225,13 @@ public class Battle : MonoBehaviour
         // not implmented
         Debug.Log("Enemy dealt: " + damage + " damage");
 
-        PlayerSettings.stats.maxHealth -= GetDamageWithDefense(damage, PlayerSettings.stats.defense);
+        playerDamage = GetDamageWithDefense(damage, PlayerSettings.stats.defense);
 
-        UpdatePlayerHealthText();
+        if (playerDamage > 0)
+        {
+            PlayerSettings.stats.maxHealth -= playerDamage;
+            UpdatePlayerHealthText();
+        }
     }
 
 
@@ -236,5 +254,15 @@ public class Battle : MonoBehaviour
 
     }
 
+    IEnumerator ChangeColorCoroutine(TextMeshProUGUI text)
+    {
+        // Change the text color to the target color
+        text.color = Color.red;
 
+        // Wait for the specified duration
+        yield return new WaitForSeconds(1);
+
+        // Revert back to the original color
+        text.color = Color.black;
+    }
 }
